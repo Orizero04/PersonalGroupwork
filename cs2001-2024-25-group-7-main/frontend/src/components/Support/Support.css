@@ -1,0 +1,116 @@
+
+/* This is a style sheet for the support page */
+
+
+/* Overall support page laout split into two sections */
+.supportLayout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+    background-color: #E6F7F4; 
+  }
+  
+  /*Helplines section which is on the left side */
+  .helplinesSection {
+    flex: 6;
+  }
+  /*Emergency section which is on the right side */
+  .emergencySection {
+    flex: 1;
+    padding-right: 20px;
+    margin-top: 115px;
+  }
+  /* Title of the page' available helpliens' */
+  .subtitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /*container for the toggle switch */
+  .toggleLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  
+  .toggleInput {
+    margin-right: 10px;
+  }
+  
+  .helplineList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* individual helpline card */
+  .helplineCard {
+    background: #A7C7E7; /* light blue hex */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* helpline card content  name , decription m contact etc*/
+  .helplineName {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+  }
+  
+  .helplineMainDescription {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 18px;
+  }
+  
+    
+  .helplineContact {
+    font-weight: normal;
+    margin: 6px 0;
+  }
+  
+  .helplineLink {
+    font-weight: bold;
+    margin-right: 12px; 
+  }
+  
+  .contactRow {
+    display: inline-block;
+  }
+  
+  
+  .contactInstruction {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #555;
+    margin-left: 6px;
+  }
+  
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #777;
+  }
+  
+  @media (max-width: 900px) {
+    .supportLayout {
+      flex-direction: column;
+    }
+    
+        
+  }
+  
